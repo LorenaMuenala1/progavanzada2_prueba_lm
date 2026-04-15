@@ -1,22 +1,23 @@
 package com.edu.uce.negocio;
 
 public class Pedido {
-     private String cliente;
+   private String cliente;
     private String producto;
+    private String telefono;
     private double total;
     private String correo;
-
-    public Pedido(String cliente, String produto, double total, String correo) {
+ 
+    public Pedido() {
+    }
+   
+    public Pedido(String cliente, String producto, String telefono, double total, String correo) {
         this.cliente = cliente;
         this.producto = producto;
+        this.telefono = telefono;
         this.total = total;
         this.correo = correo;
     }
-
-    public Pedido(){
-
-    }
-    //Metodos get y set
+ 
     public String getCliente() {
         return cliente;
     }
@@ -47,6 +48,14 @@ public class Pedido {
  
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+ 
+    public String getTelefono() {
+        return telefono;
+    }
+ 
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
  
 }
