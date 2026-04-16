@@ -8,11 +8,7 @@ public class NotificadorMail {
         System.out.println("Con el mensaje: " + mensaje);
     }
  
-    public void enviarSMS(String telefono, String mensaje) {
-       
-        System.out.println("Se envia el SMS al telefono: " + telefono);
-        System.out.println("Con el mensaje: " + mensaje);
-    }
+  
  
 
 }
